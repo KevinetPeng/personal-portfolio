@@ -1,0 +1,31 @@
+:root {
+  --primary-color-main: #975eff;
+  --primary-color-1: #f0e8ff;
+  --primary-color-2: #d2b9ff;
+  --primary-color-3: #ac7fff;
+  --primary-color-5: #8352df;
+  --primary-color-6: #6841b0;
+  --primary-color-7: #40286e;
+
+  --accent-color-main: #4d88ff;
+  --accent-color-1: #d9e6ff;
+  --accent-color-2: #99bbff;
+  --accent-color-3: #73a1ff;
+  --accent-color-5: #1d68ff;
+  --accent-color-6: #004fed;
+  --accent-color-7: #0037a6;
+
+  --neutral-color-main: #ced5e1;
+  --neutral-color-1: #ebeef3;
+  --neutral-color-2: #e4e8ee;
+  --neutral-color-3: #dadfe8;
+  --neutral-color-5: #b9c0cb;
+  --neutral-color-6: #a6aeba;
+  --neutral-color-7: #99a1ac;
+
+  --shadow-color: 0px 4px 4px rgba(150, 150, 150, 0.2);
+
+  --open-sans: "Open Sans", sans-serif;
+
+  --banner-height: 600px;
+}

@@ -1,0 +1,87 @@
+/* CSS variables */
+@import url(./partials/_variables.css);
+
+body,
+html {
+  font-family: var(--open-sans);
+  box-sizing: border-box;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Text */
+
+.text-primary {
+  color: var(--primary-color-main) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color-main) !important;
+}
+
+/* End Text */
+
+/* Navbar */
+
+.navbar {
+  padding: 8px 16px 8px 24px;
+  background-color: rgba(151, 94, 255, 0.8);
+}
+
+.header-main .nav-menu .navbar .navbar-nav .nav-link {
+  font-family: var(--open-sans);
+  color: white;
+}
+.header-main .nav-menu .navbar .navbar-nav .nav-link:hover {
+  color: var(--primary-color-2);
+}
+
+.header-main .nav-menu .navbar .resume-dl-text {
+  color: white;
+  border-radius: 4px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+.header-main .nav-menu .navbar .resume-dl-text:hover {
+  color: var(--accent-color-1);
+  border-color: var(--accent-color-1);
+}
+
+/* End Navbar */
+
+/* Banner */
+
+.banner {
+  background-image: url(../images/banner.png);
+  height: var(--banner-height);
+  background-position: center bottom;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+.fill-banner {
+  height: var(--banner-height);
+}
+
+.outline-btn {
+  border-color: var(--primary-color-main);
+  border-width: 1px;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 200px;
+  margin-right: 32px;
+  border-color: var(--primary-color-7);
+  border-width: 2px;
+  border-style: solid;
+}
+/* End Banner */
