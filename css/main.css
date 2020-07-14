@@ -1,5 +1,5 @@
 /* CSS variables */
-@import url(/css/partials/_variables.css);
+@import url(_variables.css);
 
 body,
 html {
