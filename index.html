@@ -32,12 +32,11 @@
 
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/_variables.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header-main">
-      <div class="nav-menu fixed-top">
+      <div class="nav-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">Kevin Peng (Logo here)</a>
           <button
@@ -62,7 +61,25 @@
                 <a class="nav-link" href="#">Portfolio</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+              </li>
+              <li class="nav-item mr-auto">
                 <a class="nav-link" href="#">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-github fa-lg nav-icon"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-linkedin-in fa-lg nav-icon"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fab fa-instagram fa-lg nav-icon"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -86,25 +103,22 @@
                 Image Broken
               </h1>
             </div>
-            <div class="d-flex flex-column justify-content-center title">
-              <h1 class="title-text ml-5 mt-4 ml-sm-2 mt-sm-1">
-                I am Kevin Peng
+            <div
+              class="d-flex flex-column justify-content-center align-items-center align-items-sm-start title"
+            >
+              <h1 class="title-text mt-4 ml-sm-2 mt-sm-1">
+                I am Kevin Peng,
               </h1>
-              <h5 class="title-text ml-2">
+              <h5 class="title-text ml-sm-2">
                 ...an aspiring
                 <span class="text-secondary">software developer</span> studying
-                Integrated Engineering at UBC
+                Integrated Engineering at UBC.
               </h5>
-              <div class="d-flex flex-row mt-2 ml-5 ml-sm-2">
-                <button
-                  type="button"
-                  class="btn btn-light text-primary mr-4 ml-2 outline-btn"
-                >
-                  Github
-                </button>
+              <div class="d-flex flex-row mt-2 ml-sm-3 resume-dl-flex">
                 <button
                   type="button"
                   class="btn btn-light text-primary outline-btn"
+                  id="dl-resume-button"
                 >
                   Download Resume
                 </button>

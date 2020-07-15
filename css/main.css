@@ -1,5 +1,5 @@
 /* CSS variables */
-@import url(_variables.css);
+@import url(variables.css);
 
 body,
 html {
@@ -26,7 +26,11 @@ html {
 
 .navbar {
   padding: 8px 16px 8px 24px;
-  background-color: rgba(151, 94, 255, 0.8);
+  background-color: var(--primary-color-main);
+}
+
+.header-main .nav-menu .navbar .navbar-nav {
+  width: 100%;
 }
 
 .header-main .nav-menu .navbar .navbar-nav .nav-link {
@@ -37,16 +41,10 @@ html {
   color: var(--primary-color-2);
 }
 
-.header-main .nav-menu .navbar .resume-dl-text {
-  color: white;
-  border-radius: 4px;
-  border-color: white;
-  border-width: 1px;
-  border-style: solid;
-}
-.header-main .nav-menu .navbar .resume-dl-text:hover {
-  color: var(--accent-color-1);
-  border-color: var(--accent-color-1);
+.header-main .nav-menu {
+  box-shadow: var(--shadow-color);
+  z-index: 1;
+  position: relative;
 }
 
 /* End Navbar */
@@ -83,5 +81,15 @@ html {
   border-color: var(--primary-color-7);
   border-width: 2px;
   border-style: solid;
+}
+
+.resume-dl-flex {
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .resume-dl-flex {
+    justify-content: start;
+  }
 }
 /* End Banner */
