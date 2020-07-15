@@ -10,6 +10,10 @@ html {
   height: 100%;
 }
 
+.main-area {
+  background-color: var(--primary-color-3);
+}
+
 /* Text */
 
 .text-primary {
@@ -26,7 +30,7 @@ html {
 
 .navbar {
   padding: 8px 16px 8px 24px;
-  background-color: var(--primary-color-main);
+  background-color: var(--primary-color-6);
 }
 
 .header-main .nav-menu .navbar .navbar-nav {
@@ -35,7 +39,7 @@ html {
 
 .header-main .nav-menu .navbar .navbar-nav .nav-link {
   font-family: var(--open-sans);
-  color: white;
+  color: var(--neutral-color-2);
 }
 .header-main .nav-menu .navbar .navbar-nav .nav-link:hover {
   color: var(--primary-color-2);
@@ -51,6 +55,22 @@ html {
 
 /* Banner */
 
+.main-title {
+  font-weight: 300;
+  color: var(--neutral-color-2);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.title-name {
+  font-weight: 600;
+  color: var(--neutral-color-2);
+}
+
+.sub-title {
+  font-weight: 300;
+  color: var(--neutral-color-2);
+}
+
 .banner {
   background-image: url(../images/banner.png);
   height: var(--banner-height);
@@ -58,7 +78,6 @@ html {
   background-size: inherit;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #ffffff;
 }
 
 .fill-banner {
@@ -93,3 +112,25 @@ html {
   }
 }
 /* End Banner */
+
+/* Showcase Area */
+
+.container-card {
+  height: 600px;
+  margin-top: 140px;
+  background-color: var(--primary-color-7);
+  box-shadow: var(--shadow-heavy);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.card-ending-img {
+  height: 100px;
+  background-image: url(../images/lower-card.png);
+  background-position: center bottom;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-size: 100% 500%;
+}
+
+/* End Showcase Area */
