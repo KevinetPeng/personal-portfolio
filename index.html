@@ -1,124 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Peng</title>
 
-    <!-- Bootstrap css -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Peng</title>
 
-    <!-- Google Open Sans font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!-- Font Awesome SVG Icons-->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"
-      integrity="sha384-heKROmDHlJdBb+n64p+i+wLplNYUZPaZmp2HZ4J6KCqzmd33FJ8QClrOV3IdHZm5"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Google Open Sans font-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 
-    <!-- JQuery CDN from Google -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Font Awesome SVG Icons-->
+  <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"
+    integrity="sha384-heKROmDHlJdBb+n64p+i+wLplNYUZPaZmp2HZ4J6KCqzmd33FJ8QClrOV3IdHZm5"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom css -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header-main">
-      <div class="nav-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">(Logo here)</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item mr-auto">
-                <a class="nav-link" href="#">Contact Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fab fa-github fa-lg nav-icon"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fab fa-linkedin-in fa-lg nav-icon"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fab fa-instagram fa-lg nav-icon"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+  <!-- JQuery CDN from Google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!------------------------------- START Main Area ---------------------------->
-    <div class="main-area">
-      <!-- Banner -->
+  <!-- Custom css -->
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- Event Handling-->
+  <script src="eventHandlers.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header-main">
+    <div class="nav-menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="">(Logo here)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToSkills()">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link" href="#">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/KevinetPeng" target="_blank"><i
+                  class="fab fa-github fa-lg nav-icon"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/-kevin-peng/" target="_blank"><i
+                  class="fab fa-linkedin-in fa-lg nav-icon"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/kevinpengaaa/" target="_blank"><i
+                  class="fab fa-instagram fa-lg nav-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!------------------------------- START Main Area ---------------------------->
+  <div class="main-area">
+    <!-- Banner -->
+    <div class="banner-wrapper">
       <section class="banner">
         <div class="container fill-banner">
-          <div
-            class="d-flex flex-column flex-sm-row align-items-center justify-content-center fill-banner"
-          >
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center fill-banner">
             <div class="d-flex flex-column">
-              <h1
-                class="text-hide profile-pic"
-                style="background-image: url('./images/profile.jpeg');"
-              >
+              <h1 class="text-hide profile-pic" style="background-image: url('./images/profile.jpeg');">
                 Image Broken
               </h1>
             </div>
-            <div
-              class="d-flex flex-column justify-content-center align-items-center align-items-sm-start title"
-            >
+            <div class="d-flex flex-column justify-content-center align-items-center align-items-sm-start title">
               <h1 class="title-text mt-4 ml-sm-2 mt-sm-1 main-title">
-                I am <span class="title-name">Kevin Peng</span>,
+                I am <span class="title-name">Kevin Peng,</span>
               </h1>
               <h3 class="title-text ml-sm-2 sub-title">
                 ...an aspiring software developer studying Integrated
                 Engineering at The University of British Columbia.
               </h3>
               <div class="d-flex flex-row mt-2 ml-sm-3 resume-dl-flex">
-                <button
-                  type="button"
-                  class="btn btn-light text-primary outline-btn"
-                  id="dl-resume-button"
-                >
+                <button type="button" class="btn btn-light text-primary outline-btn" id="dl-resume-button">
                   Download Resume
                 </button>
               </div>
@@ -126,35 +96,128 @@
           </div>
         </div>
       </section>
-
-      <!-- Skills -->
-      <section>
-        <div class="container container-card"></div>
-      </section>
-      <section class="container card-ending-img"></section>
-
-      <!-- Portfolio -->
-      <section>
-        <div class="container container-card"></div>
-      </section>
     </div>
-    <!------------------------------- END Main Area ---------------------------->
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container container-card">
+        <div class="d-flex flex-row justify-content-center">
+          <h2 class="title-text sub-title mt-5">I am proficient with</h2>
+        </div>
+        <div class="d-flex flex-row justify-content-center flex-wrap mt-4 mb-5">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/javascript.svg');"></div>
+            <h7 class="skill-label mt-3">JavaScript</h7>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/css.svg');"></div>
+            <h7 class="skill-label mt-3">CSS</h7>
+          </a>
+          <a href="https://nodejs.org/" target="_blank" class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/nodejs.svg');"></div>
+            <h7 class="skill-label mt-3">Node.js</h7>
+          </a>
+          <a href="https://reactjs.org/" target="_blank" class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/react.svg');"></div>
+            <h7 class="skill-label mt-3">React</h7>
+          </a>
+          <a href="https://www.mongodb.com/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/mongodb.svg');"></div>
+            <h7 class="skill-label mt-3">MongoDB</h7>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container card-ending img1"></section>
+
+    <!-- More Skills -->
+    <section id="more-skills">
+      <div class="container container-card">
+        <div class="d-flex flex-row justify-content-center">
+          <h2 class="title-text sub-title mt-5">I also have experience with</h2>
+        </div>
+        <div class="d-flex flex-row justify-content-center flex-wrap mt-4 mb-5">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/html5.svg');"></div>
+            <h7 class="skill-label mt-3">HTML</h7>
+          </a>
+          <a href="https://getbootstrap.com/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/bootstrap.svg');"></div>
+            <h7 class="skill-label mt-3">Bootstrap</h7>
+          </a>
+          <a href="https://material-ui.com/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/materialui.svg');"></div>
+            <h7 class="skill-label mt-3">Material UI</h7>
+          </a>
+          <a href="https://jquery.com/" target="_blank" class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/jquery.svg');"></div>
+            <h7 class="skill-label mt-3">jQuery</h7>
+          </a>
+          <a href="https://www.python.org/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/python.svg');">
+            </div>
+            <h7 class="skill-label mt-3">Python</h7>
+          </a>
+          <a href="https://www.oracle.com/java/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/java-4.svg');"></div>
+            <h7 class="skill-label mt-3">Java</h7>
+          </a>
+          <a href="https://en.cppreference.com/w/c/language" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/c.svg');"></div>
+            <h7 class="skill-label mt-3">C</h7>
+          </a>
+          <a href="https://restfulapi.net/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/api.svg');"></div>
+            <h7 class="skill-label mt-3">RESTful APIs</h7>
+          </a>
+          <a href="https://git-scm.com/" target="_blank" class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/git.svg');"></div>
+            <h7 class="skill-label mt-3">Git</h7>
+          </a>
+          <a href="https://www.arduino.cc/" target="_blank"
+            class="card d-flex flex-column align-items-center skill-card">
+            <div class="skill-icon" style="background-image: url('./svgs/arduino.svg');"></div>
+            <h7 class="skill-label mt-3">Arduino</h7>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container card-ending img2"></section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container container-card">
+        <div class="d-flex flex-row justify-content-center">
+          <h2 class="title-text sub-title mt-5">My Projects</h2>
+        </div>
+
+      </div>
+    </section>
+    <section class="container card-ending img3"></section>
+
+
+  </div>
+  <!------------------------------- END Main Area ---------------------------->
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
