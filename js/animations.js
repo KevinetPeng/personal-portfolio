@@ -1,3 +1,14 @@
+
+//add preload class to body 
+document.body.classList.add('preload');
+
+//remove reload class to body on load
+window.addEventListener("load", () => {
+    document.body.classList.remove('preload');
+});
+
+
+//skills and projects buttons scrolling handling
 const skills_section = document.getElementById("skills");
 const projects_section = document.getElementById("projects");
 
@@ -23,6 +34,7 @@ document.getElementById("portfolio-button").addEventListener('click', () => {
     });
 });
 
+//contact me button scrolling handling
 document.getElementById("contactme-button").addEventListener('click', () => {
     anime({
         targets: [document.documentElement, document.body],
@@ -32,6 +44,7 @@ document.getElementById("contactme-button").addEventListener('click', () => {
     });
 });
 
+//top button scrolling handling
 document.getElementById("top-button").addEventListener('click', () => {
     console.log("click");
     anime({

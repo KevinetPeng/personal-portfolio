@@ -10,6 +10,19 @@ html {
   height: 100%;
 }
 
+/* preload class to ensure that animations and transitions do not play before page is loaded */
+/* preload class is removed from body after page is loaded */
+.preload *,
+.preload *:before,
+.preload *:after {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation-play-state: paused !important;
+}
+
 /* Navigation */
 
 
