@@ -50,6 +50,7 @@ html {
   border: 2px solid var(--primary-color-main);
   color: var(--primary-color-main);
   background-color: white;
+  cursor: pointer;
 }
 
 /* End Navigation */
