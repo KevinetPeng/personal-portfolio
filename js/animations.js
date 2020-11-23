@@ -129,7 +129,7 @@ window.addEventListener("scroll", () => {
             targets: '.img1',
             backgroundPosition: '50% 100%',
             easing: 'easeOutQuad',
-            duration: 900,
+            duration: 800,
         });
     }
     //if the skills image state goes from true -> false, hide image animation
@@ -147,7 +147,7 @@ window.addEventListener("scroll", () => {
             targets: '.img2',
             backgroundPosition: '50% 100%',
             easing: 'easeOutQuad',
-            duration: 900,
+            duration: 800,
         });
     }
     //if the skills image state goes from true -> false, hide image animation
@@ -165,7 +165,7 @@ window.addEventListener("scroll", () => {
             targets: '.img3',
             backgroundPosition: '50% 100%',
             easing: 'easeOutQuad',
-            duration: 900,
+            duration: 800,
         });
     }
     //if the skills image state goes from true -> false, hide image animation
