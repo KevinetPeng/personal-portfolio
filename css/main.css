@@ -221,7 +221,6 @@ body::-webkit-scrollbar-thumb {
 
 .card-ending {
   height: 100px;
-  background-position: center bottom;
   background-size: inherit;
   background-repeat: no-repeat;
   background-size: 100% 500%;
@@ -229,14 +228,17 @@ body::-webkit-scrollbar-thumb {
 
 .img1 {
   background-image: url(../images/lower-card1.png);
+  background-position: 50% 150%;
 }
 
 .img2 {
   background-image: url(../images/lower-card2.png);
+  background-position: 50% 150%;
 }
 
 .img3 {
   background-image: url(../images/lower-card3.png);
+  background-position: 50% 150%;
 }
 
 .skill-card {

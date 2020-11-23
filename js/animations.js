@@ -7,10 +7,12 @@ window.addEventListener("load", () => {
     document.body.classList.remove('preload');
 });
 
+const skills_section = document.getElementById("skills");
+const more_skills_section = document.getElementById("more-skills")
+const projects_section = document.getElementById("projects");
 
 //skills and projects buttons scrolling handling
-const skills_section = document.getElementById("skills");
-const projects_section = document.getElementById("projects");
+
 
 document.getElementById("skills-button").addEventListener('click', () => {
     let offset = document.documentElement.scrollTop + skills_section.getBoundingClientRect().top - 20;
@@ -55,8 +57,11 @@ document.getElementById("top-button").addEventListener('click', () => {
     });
 });
 
-
+//initialized previous state variables
 let prevButtonState = false;
+let prevImgStateSkills = false;
+let prevImgStateMoreSkills = false;
+let prevImgStateProjects = false;
 //Scrolling listener
 window.addEventListener("scroll", () => {
     //Back to top button animation
@@ -91,6 +96,88 @@ window.addEventListener("scroll", () => {
 
     prevButtonState = buttonState;
 
+    //card ending pattern animations
+    let imgStateSkills;
+    let imgStateMoreSkills;
+    let imgStateProjects;
 
+    // if the bottom of the skills section is higher than the lowest point of the window, imgStateSkills is true
+    if (projects_section.getBoundingClientRect().bottom < window.innerHeight) {
+        imgStateSkills = true;
+        imgStateMoreSkills = true;
+        imgStateProjects = true;
+    }
+    else if (more_skills_section.getBoundingClientRect().bottom < window.innerHeight) {
+        imgStateSkills = true;
+        imgStateMoreSkills = true;
+        imgStateProjects = false;
+    }
+    else if (skills_section.getBoundingClientRect().bottom < window.innerHeight) {
+        imgStateSkills = true;
+        imgStateMoreSkills = false;
+        imgStateProjects = false;
+    }
+    else {
+        imgStateSkills = false;
+        imgStateMoreSkills = false;
+        imgStateProjects = false;
+    }
 
+    //if the skills image state goes from false -> true, show image animation
+    if (imgStateSkills == true && prevImgStateSkills == false) {
+        anime({
+            targets: '.img1',
+            backgroundPosition: '50% 100%',
+            easing: 'easeOutQuad',
+            duration: 900,
+        });
+    }
+    //if the skills image state goes from true -> false, hide image animation
+    else if (imgStateSkills == false && prevImgStateSkills == true) {
+        anime({
+            targets: '.img1',
+            backgroundPosition: '50% 150%',
+            duration: 10,
+        });
+    }
+
+    //if the skills image state goes from false -> true, show image animation
+    if (imgStateMoreSkills == true && prevImgStateMoreSkills == false) {
+        anime({
+            targets: '.img2',
+            backgroundPosition: '50% 100%',
+            easing: 'easeOutQuad',
+            duration: 900,
+        });
+    }
+    //if the skills image state goes from true -> false, hide image animation
+    else if (imgStateMoreSkills == false && prevImgStateMoreSkills == true) {
+        anime({
+            targets: '.img2',
+            backgroundPosition: '50% 150%',
+            duration: 10,
+        });
+    }
+
+    //if the skills image state goes from false -> true, show image animation
+    if (imgStateProjects == true && prevImgStateProjects == false) {
+        anime({
+            targets: '.img3',
+            backgroundPosition: '50% 100%',
+            easing: 'easeOutQuad',
+            duration: 900,
+        });
+    }
+    //if the skills image state goes from true -> false, hide image animation
+    else if (imgStateProjects == false && prevImgStateProjects == true) {
+        anime({
+            targets: '.img3',
+            backgroundPosition: '50% 150%',
+            duration: 10,
+        });
+    }
+
+    prevImgStateSkills = imgStateSkills;
+    prevImgStateMoreSkills = imgStateMoreSkills;
+    prevImgStateProjects = imgStateProjects;
 });
