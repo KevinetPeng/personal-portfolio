@@ -8,7 +8,8 @@ window.addEventListener("load", () => {
 });
 
 const skills_section = document.getElementById("skills");
-const more_skills_section = document.getElementById("more-skills")
+const more_skills_section = document.getElementById("more-skills");
+const experience_section = document.getElementById("experience");
 const projects_section = document.getElementById("projects");
 
 //skills and projects buttons scrolling handling
@@ -57,11 +58,15 @@ document.getElementById("top-button").addEventListener('click', () => {
     });
 });
 
-//initialized previous state variables
-let prevButtonState = false;
-let prevImgStateSkills = false;
-let prevImgStateMoreSkills = false;
-let prevImgStateProjects = false;
+//initialized previous state object
+let PrevState = {
+    topButton: false,
+    skillsImg: false,
+    moreSkillsImg: false,
+    experienceImg: false,
+    projectsImg: false,
+}
+
 //Scrolling listener
 window.addEventListener("scroll", () => {
     //Back to top button animation
@@ -76,7 +81,7 @@ window.addEventListener("scroll", () => {
     }
 
     //if button state changes from false to true, show button animation
-    if (buttonState == true && prevButtonState == false) {
+    if (buttonState == true && PrevState.topButton == false) {
         anime({
             targets: '#top-button',
             bottom: 54,
@@ -85,7 +90,7 @@ window.addEventListener("scroll", () => {
         });
     }
     //if button state changes from true to false, hide button animation
-    else if (buttonState == false && prevButtonState == true) {
+    else if (buttonState == false && PrevState.topButton == true) {
         anime({
             targets: '#top-button',
             bottom: -200,
@@ -94,10 +99,11 @@ window.addEventListener("scroll", () => {
         });
     }
 
-    prevButtonState = buttonState;
+    PrevState.topButton = buttonState;
 
     //card ending pattern animations
     let imgStateSkills;
+    let imgStateExperience;
     let imgStateMoreSkills;
     let imgStateProjects;
 
@@ -105,79 +111,108 @@ window.addEventListener("scroll", () => {
     if (projects_section.getBoundingClientRect().bottom < window.innerHeight) {
         imgStateSkills = true;
         imgStateMoreSkills = true;
+        imgStateExperience = true;
         imgStateProjects = true;
+    }
+    else if (experience_section.getBoundingClientRect().bottom < window.innerHeight) {
+        imgStateSkills = true;
+        imgStateMoreSkills = true;
+        imgStateExperience = true;
+        imgStateProjects = false;
     }
     else if (more_skills_section.getBoundingClientRect().bottom < window.innerHeight) {
         imgStateSkills = true;
         imgStateMoreSkills = true;
+        imgStateExperience = false;
         imgStateProjects = false;
     }
     else if (skills_section.getBoundingClientRect().bottom < window.innerHeight) {
         imgStateSkills = true;
         imgStateMoreSkills = false;
+        imgStateExperience = false;
         imgStateProjects = false;
     }
     else {
         imgStateSkills = false;
         imgStateMoreSkills = false;
+        imgStateExperience = false;
         imgStateProjects = false;
     }
 
     //if the skills image state goes from false -> true, show image animation
-    if (imgStateSkills == true && prevImgStateSkills == false) {
+    if (imgStateSkills == true && PrevState.skillsImg == false) {
         anime({
             targets: '.img1',
             backgroundPosition: '50% 100%',
             easing: 'easeOutQuad',
-            duration: 800,
+            duration: 600,
         });
     }
     //if the skills image state goes from true -> false, hide image animation
-    else if (imgStateSkills == false && prevImgStateSkills == true) {
+    else if (imgStateSkills == false && PrevState.skillsImg == true) {
         anime({
             targets: '.img1',
             backgroundPosition: '50% 150%',
-            duration: 10,
+            duration: 1,
         });
     }
 
-    //if the skills image state goes from false -> true, show image animation
-    if (imgStateMoreSkills == true && prevImgStateMoreSkills == false) {
+    //if the skills more skills state goes from false -> true, show image animation
+    if (imgStateMoreSkills == true && PrevState.moreSkillsImg == false) {
         anime({
             targets: '.img2',
             backgroundPosition: '50% 100%',
             easing: 'easeOutQuad',
-            duration: 800,
+            duration: 600,
         });
     }
-    //if the skills image state goes from true -> false, hide image animation
-    else if (imgStateMoreSkills == false && prevImgStateMoreSkills == true) {
+    //if the skills more skills state goes from true -> false, hide image animation
+    else if (imgStateMoreSkills == false && PrevState.moreSkillsImg == true) {
         anime({
             targets: '.img2',
             backgroundPosition: '50% 150%',
-            duration: 10,
+            duration: 1,
         });
     }
 
-    //if the skills image state goes from false -> true, show image animation
-    if (imgStateProjects == true && prevImgStateProjects == false) {
+    //if the experience image state goes from false -> true, show image animation
+    if (imgStateExperience == true && PrevState.experienceImg == false) {
         anime({
             targets: '.img3',
             backgroundPosition: '50% 100%',
             easing: 'easeOutQuad',
-            duration: 800,
+            duration: 600,
         });
     }
-    //if the skills image state goes from true -> false, hide image animation
-    else if (imgStateProjects == false && prevImgStateProjects == true) {
+    //if the experience image state goes from true -> false, hide image animation
+    else if (imgStateExperience == false && PrevState.experienceImg == true) {
         anime({
             targets: '.img3',
             backgroundPosition: '50% 150%',
-            duration: 10,
+            duration: 1,
         });
     }
 
-    prevImgStateSkills = imgStateSkills;
-    prevImgStateMoreSkills = imgStateMoreSkills;
-    prevImgStateProjects = imgStateProjects;
+    //if the projects image state goes from false -> true, show image animation
+    if (imgStateProjects == true && PrevState.projectsImg == false) {
+        anime({
+            targets: '.img4',
+            backgroundPosition: '50% 100%',
+            easing: 'easeOutQuad',
+            duration: 600,
+        });
+    }
+    //if the projects image state goes from true -> false, hide image animation
+    else if (imgStateProjects == false && PrevState.projectsImg == true) {
+        anime({
+            targets: '.img4',
+            backgroundPosition: '50% 150%',
+            duration: 1,
+        });
+    }
+
+    PrevState.skillsImg = imgStateSkills;
+    PrevState.moreSkillsImg = imgStateMoreSkills;
+    PrevState.experienceImg = imgStateExperience;
+    PrevState.projectsImg = imgStateProjects;
 });

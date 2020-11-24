@@ -161,6 +161,10 @@ body::-webkit-scrollbar-thumb {
   height: var(--banner-height);
 }
 
+.content-banner {
+  height: 540px;
+}
+
 .outline-btn {
   border-color: var(--primary-color-main);
   border-width: 1px;
@@ -239,6 +243,11 @@ body::-webkit-scrollbar-thumb {
 
 .img3 {
   background-image: url(../images/lower-card3.png);
+  background-position: 50% 150%;
+}
+
+.img4 {
+  background-image: url(../images/lower-card4.png);
   background-position: 50% 150%;
 }
 
