@@ -216,7 +216,7 @@ body::-webkit-scrollbar-thumb {
 
 .container-card {
   height: fit-content;
-  margin-top: 180px;
+  margin-top: 150px;
   background-color: var(--primary-color-6);
   box-shadow: var(--shadow-heavy);
   border-radius: 4px;

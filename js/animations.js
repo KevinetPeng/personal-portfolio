@@ -26,13 +26,24 @@ document.getElementById("skills-button").addEventListener('click', () => {
     });
 });
 
+document.getElementById("experience-button").addEventListener('click', () => {
+    let offset = document.documentElement.scrollTop + experience_section.getBoundingClientRect().top - 20;
+
+    anime({
+        targets: [document.documentElement, document.body],
+        scrollTop: offset,
+        duration: 900,
+        easing: 'easeInOutQuad',
+    });
+});
+
 document.getElementById("portfolio-button").addEventListener('click', () => {
     let offset = document.documentElement.scrollTop + projects_section.getBoundingClientRect().top - 20;
 
     anime({
         targets: [document.documentElement, document.body],
         scrollTop: offset,
-        duration: 1000,
+        duration: 1200,
         easing: 'easeInOutQuad',
     });
 });
