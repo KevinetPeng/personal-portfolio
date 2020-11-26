@@ -71,7 +71,10 @@ body::-webkit-scrollbar-thumb {
 /* End Scrollbar */
 
 .main-area {
-  background-color: var(--neutral-color-2);
+  background: rgb(228,232,238);
+  background: -moz-linear-gradient(90deg, rgba(228,232,238,1) 0%, rgba(240,232,255,1) 50%, rgba(228,232,238,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(228,232,238,1) 0%, rgba(240,232,255,1) 50%, rgba(228,232,238,1) 100%);
+  background: linear-gradient(90deg, rgba(228,232,238,1) 0%, rgba(240,232,255,1) 50%, rgba(228,232,238,1) 100%);
 }
 
 /* Text */
@@ -205,8 +208,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #dl-resume-button:hover {
-  background-color: white;
-  border-color: var(--primary-color-7);
+  border-color: var(--neutral-color-1);
   box-shadow: var(--shadow-heavy);
 }
 
