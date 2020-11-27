@@ -1,4 +1,3 @@
-
 //add preload class to body 
 document.body.classList.add('preload');
 
@@ -7,53 +6,80 @@ window.addEventListener("load", () => {
     document.body.classList.remove('preload');
 });
 
+const navbar = document.getElementById("main-navbar");
 const skills_section = document.getElementById("skills");
 const more_skills_section = document.getElementById("more-skills");
 const experience_section = document.getElementById("experience");
 const projects_section = document.getElementById("projects");
 
-//skills and projects buttons scrolling handling
+//Learn more button
+document.getElementById("learn-more-button").addEventListener('mouseover', () => {
+    anime({
+        targets: '#learn-more-arrow',
+        rotate: '90deg',
+    });
+});
 
+document.getElementById("learn-more-button").addEventListener('mouseleave', () => {
+    anime({
+        targets: '#learn-more-arrow',
+        rotate: '0deg',
+    });
+});
 
-document.getElementById("skills-button").addEventListener('click', () => {
-    let offset = document.documentElement.scrollTop + skills_section.getBoundingClientRect().top - 20;
+document.getElementById("learn-more-button").addEventListener('click', () => {
+    let offset = document.documentElement.scrollTop + navbar.getBoundingClientRect().top;
 
     anime({
         targets: [document.documentElement, document.body],
         scrollTop: offset,
-        duration: 500,
+        duration: 600,
+        easing: 'easeInOutQuad',
+    });
+})
+
+//skills and projects buttons scrolling handling
+
+
+document.getElementById("skills-button").addEventListener('click', () => {
+    let offset = document.documentElement.scrollTop + skills_section.getBoundingClientRect().top - 100;
+
+    anime({
+        targets: [document.documentElement, document.body],
+        scrollTop: offset,
+        duration: 800,
         easing: 'easeInOutQuad',
     });
 });
 
 document.getElementById("experience-button").addEventListener('click', () => {
-    let offset = document.documentElement.scrollTop + experience_section.getBoundingClientRect().top - 20;
+    let offset = document.documentElement.scrollTop + experience_section.getBoundingClientRect().top - 100;
 
     anime({
         targets: [document.documentElement, document.body],
         scrollTop: offset,
-        duration: 900,
+        duration: 800,
         easing: 'easeInOutQuad',
     });
 });
 
-document.getElementById("portfolio-button").addEventListener('click', () => {
-    let offset = document.documentElement.scrollTop + projects_section.getBoundingClientRect().top - 20;
+document.getElementById("projects-button").addEventListener('click', () => {
+    let offset = document.documentElement.scrollTop + projects_section.getBoundingClientRect().top - 100;
 
     anime({
         targets: [document.documentElement, document.body],
         scrollTop: offset,
-        duration: 1200,
+        duration: 800,
         easing: 'easeInOutQuad',
     });
 });
 
 //contact me button scrolling handling
-document.getElementById("contactme-button").addEventListener('click', () => {
+document.getElementById("contact-button").addEventListener('click', () => {
     anime({
         targets: [document.documentElement, document.body],
         scrollTop: document.body.scrollHeight,
-        duration: 1500,
+        duration: 800,
         easing: 'easeInOutQuad',
     });
 });
@@ -64,7 +90,7 @@ document.getElementById("top-button").addEventListener('click', () => {
     anime({
         targets: [document.documentElement, document.body],
         scrollTop: 0,
-        duration: 1000,
+        duration: 800,
         easing: 'easeInOutQuad',
     });
 });
@@ -227,3 +253,27 @@ window.addEventListener("scroll", () => {
     PrevState.experienceImg = imgStateExperience;
     PrevState.projectsImg = imgStateProjects;
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            let id = entry.target.getAttribute('id');
+            if (id == "more-skills") {
+                id = "skills";
+            }
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`#${id}-button`).classList.add('active');
+            } else {
+                document.querySelector(`#${id}-button`).classList.remove('active');
+            }
+        });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });
+
+});
+

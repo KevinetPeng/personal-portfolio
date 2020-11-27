@@ -23,11 +23,14 @@
   --neutral-color-6: #a6aeba;
   --neutral-color-7: #99a1ac;
 
+  --dark-color-1: #2d2d55;
+  --dark-color-2: #1d1d3a;
+
   --shadow-color: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
 
   --shadow-heavy: 1px 4px 15px 1px rgba(0, 0, 0, 0.35);
 
   --open-sans: "Open Sans", sans-serif;
 
-  --banner-height: 600px;
+  --banner-height: calc(100vh + 54px);
 }
