@@ -277,3 +277,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
+//enable bootstrap tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

@@ -47,7 +47,7 @@ html {
   box-shadow: var(--shadow-heavy);
   border: 2px solid var(--primary-color-main);
   color: var(--primary-color-main);
-  background-color: white;
+  background-color: var(--neutral-color-3);
   cursor: pointer;
 }
 
@@ -197,7 +197,7 @@ body::-webkit-scrollbar-thumb {
   background-position: center center;
   border-radius: 200px;
   margin-right: 32px;
-  border-color: var(--primary-color-main);
+  border-color: var(--primary-color-6);
   border-width: 1px;
   border-style: solid;
   box-shadow: var(--shadow-color);
@@ -217,15 +217,17 @@ body::-webkit-scrollbar-thumb {
 
 #learn-more-button {
   box-shadow: var(--shadow-color);
-  border-color: var(--primary-color-main);
+  border-color: var(--primary-color-5);
+  border-width: 1px;
   background-color: var(--neutral-color-2);
   animation: show-element 0.5s ease 1.4s 1;
   animation-fill-mode: backwards;
+  box-shadow: 0px 0px 3px var(--neutral-color-7);
 }
 
 #learn-more-button:hover {
-  border-color: var(--neutral-color-1);
-  background-color: var(--neutral-color-1);
+  border-color: var(--neutral-color-3);
+  background-color: var(--neutral-color-3);
   box-shadow: var(--shadow-heavy);
 }
 
@@ -289,7 +291,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: 13px;
   margin-right: 13px;
   box-shadow: var(--shadow-heavy);
-  background-color:  #ffffff;
+  background-color:  var(--neutral-color-3);
 }
 
 .skill-icon {
