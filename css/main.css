@@ -136,9 +136,26 @@ body::-webkit-scrollbar-thumb {
   border-color: var(--primary-color-3);
 }
 
+.logo-icon {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: .1s ease;
+}
+
+.logo-icon:hover {
+  filter: brightness(130%);
+}
+
 /* End Navbar */
 
 /* Banner */
+
+.title {
+  z-index: 1;
+}
 
 .main-title {
   font-weight: 300;
@@ -235,6 +252,41 @@ body::-webkit-scrollbar-thumb {
   margin-left: 10px;
 }
 
+.profile-pattern-flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pattern-inner {
+  height: 420px;
+  width: 420px;
+  position: absolute;
+}
+
+.profile-pattern-outer {
+  height: 365px;
+  width: 365px;
+  position: absolute;
+}
+
+.profile-rotate {
+  animation: rotation 2s 1 ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 /* End Banner */
 
 /* Skill Showcase Area */
@@ -284,12 +336,10 @@ body::-webkit-scrollbar-thumb {
   margin-right: 16px;
   margin-top: 24px;
   background-color: var(--neutral-color-1);
+  transition: .2s ease;
 }
 
 .skill-card:hover {
-  width: 134px;
-  margin-left: 13px;
-  margin-right: 13px;
   box-shadow: var(--shadow-heavy);
   background-color:  var(--neutral-color-3);
 }
@@ -300,11 +350,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .grey-label {
-  color: #373f44;
+  color: #333d44;
 }
 
 .grey-label-dark {
   color: #292f33;
+}
+
+.primary-label {
+  color: var(--primary-color-6)
 }
 
 .skill-hr {
@@ -318,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* End Skill Showcase Area */
 
-/* Project Area */
+/* Project/Experience Area */
 .project-container {
   height: fit-content;
   margin-top: 32px;
@@ -328,10 +382,76 @@ body::-webkit-scrollbar-thumb {
   padding: 16px;
 }
 
-.project-hr {
-  margin-top: 12px;
-  border-color: var(--primary-color-2);
+.detail-list {
+  margin-top: 16px;
 }
+
+.detail-list-item {
+  margin-bottom: 8px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--neutral-color-main);
+}
+
+.experience-card {
+  width: 328px; 
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 24px;
+  background-color: var(--neutral-color-1);
+  transition: .4s ease;
+}
+
+.experience-card:hover .experience-icon {
+  opacity: 0.05;
+}
+
+.experience-card:hover .modal-button {
+  opacity: 1;
+}
+
+.experience-icon {
+  width: 260px;
+  height: 260px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: .4s ease;
+}
+
+.modal-button {
+  position: absolute;
+  top: 40%;
+  border: 2px solid var(--primary-color-5);
+  color: #333d44;
+  opacity: 0;
+  transition: .4s ease;
+  border-radius: 2px;
+  padding: 8px 12px ;
+}
+
+.modal-button:hover {
+  background-color: var(--primary-color-5);
+  color: #ffffff;
+}
+
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/svgs/back.svg");
+}
+
+.carousel-control-next-icon {
+	background-image: url("/svgs/next.svg");
+}
+
+.carousel-indicators li {
+  background-color: var(--neutral-color-7);
+}
+
 /* Project Area */
 
 /* Animations */
