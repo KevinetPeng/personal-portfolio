@@ -160,22 +160,22 @@ body::-webkit-scrollbar-thumb {
 .main-title {
   font-weight: 300;
   color: var(--neutral-color-2);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  animation: show-element 0.5s ease 0.8s 1;
+  animation: show-element 0.5s ease 1.5s 1;
   animation-fill-mode: backwards;
 }
 
 .title-name {
   font-weight: 600;
   color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 0.9s 1;
+  animation: show-element 0.5s ease 1.7s 1;
   animation-fill-mode: backwards;
+  text-shadow: 2px 2px 0px rgba(155, 155, 155, 0.3);
 }
 
 .sub-title {
   font-weight: 300;
   color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 1.1s 1;
+  animation: show-element 0.5s ease 2s 1;
   animation-fill-mode: backwards;
 }
 
@@ -189,7 +189,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 100px;
-  animation: slide-down 1s ease 0.3s 1;
+  animation: slide-down 1.5s ease 0.3s 1;
   animation-fill-mode: backwards;
 }
 
@@ -224,6 +224,7 @@ body::-webkit-scrollbar-thumb {
 
 .learn-more-flex {
   justify-content: center;
+
 }
 
 @media (min-width: 576px) {
@@ -237,9 +238,9 @@ body::-webkit-scrollbar-thumb {
   border-color: var(--primary-color-5);
   border-width: 1px;
   background-color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 1.4s 1;
+  box-shadow: 2px 2px 1px var(--neutral-color-7);
+  animation: flyInBottom 0.5s ease-out 2.3s 1;
   animation-fill-mode: backwards;
-  box-shadow: 0px 0px 3px var(--neutral-color-7);
 }
 
 #learn-more-button:hover {
@@ -284,6 +285,18 @@ body::-webkit-scrollbar-thumb {
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes flyInBottom {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
