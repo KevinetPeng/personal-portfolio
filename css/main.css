@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 200px;
   margin-right: 32px;
   border-color: var(--primary-color-6);
-  border-width: 1px;
+  border-width: 3px;
   border-style: solid;
   box-shadow: var(--shadow-color);
   animation: show-element 0.5s ease 0.7s 1;
@@ -382,10 +382,6 @@ body::-webkit-scrollbar-thumb {
   padding: 16px;
 }
 
-.detail-list {
-  margin-top: 16px;
-}
-
 .detail-list-item {
   margin-bottom: 8px;
 }
@@ -395,7 +391,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .experience-card {
-  width: 328px; 
+  width: 280px; 
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 24px;
@@ -437,7 +433,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-inner {
-  height: 400px;
+  height: auto;
 }
 
 .carousel-control-prev-icon {
@@ -453,6 +449,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Project Area */
+
+.project-card {
+  width: 160px;
+}
+
+.project-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.self-link {
+  cursor: pointer;
+  width: auto;
+}
+
+/* Contact me area */
+.contact-section {
+  height: 600px;
+  margin-top: 200px;
+  background-color: var(--primary-color-7);
+}
+
+
 
 /* Animations */
 

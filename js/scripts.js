@@ -12,6 +12,11 @@ const more_skills_section = document.getElementById("more-skills");
 const experience_section = document.getElementById("experience");
 const projects_section = document.getElementById("projects");
 
+//Enable popovers
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
 //Learn more button
 document.getElementById("learn-more-button").addEventListener('mouseover', () => {
     anime({
