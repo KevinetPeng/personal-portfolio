@@ -27,8 +27,8 @@
   --dark-color-2: #1d1d3a;
 
   --shadow-color: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
-
   --shadow-heavy: 1px 4px 15px 1px rgba(0, 0, 0, 0.35);
+  --shadow-primary: 0px 0px 25px 0px #8352df;
 
   --open-sans: "Open Sans", sans-serif;
 
