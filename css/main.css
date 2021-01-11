@@ -450,11 +450,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("/svgs/back.svg");
+  background-image: url(../svgs/back.svg);
 }
 
 .carousel-control-next-icon {
-	background-image: url("/svgs/next.svg");
+	background-image: url(../svgs/next.svg);
 }
 
 .carousel-indicators li {
