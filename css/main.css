@@ -82,6 +82,10 @@ body::-webkit-scrollbar-thumb {
   color: var(--dark-color-2) !important;
 }
 
+.bottom-border-white {
+  border-bottom: 1px solid white;
+}
+
 /* End Text */
 
 /* Navbar */
@@ -99,16 +103,24 @@ body::-webkit-scrollbar-thumb {
 .nav-menu .navbar .navbar-nav .nav-link {
   font-family: var(--open-sans);
   color: var(--neutral-color-2);
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .nav-menu .navbar .navbar-nav .nav-link:hover {
   color: var(--primary-color-3);
   cursor: pointer;
+  border-bottom: 1px solid var(--primary-color-3);
 }
 
 .nav-menu .navbar .navbar-nav .active {
   color: var(--primary-color-3);
   cursor: pointer;
+  border-bottom: 1px solid var(--primary-color-3);
 }
 
 .nav-menu {
