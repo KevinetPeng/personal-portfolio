@@ -282,6 +282,36 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
+window.addEventListener('mousemove', (e) => {
+    anime({
+        targets: '#cursor-circle',
+        top: e.clientY - 50,
+        left: e.clientX - 50,
+        duration: 50,
+        easing: "easeOutQuad"
+    });
+});
+
+document.querySelectorAll('a, button, .hoverable').forEach( (element) => {
+    element.addEventListener('mouseover', () => {
+        anime({
+            targets: '#cursor-circle',
+            scale: 2,
+            duration: 800,
+          });
+    });
+
+    element.addEventListener('mouseleave', () => {
+        anime({
+            targets: '#cursor-circle',
+            scale: 1,
+            duration: 800,
+          });
+    });
+});
+
+
+
 //enable bootstrap tooltips
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()

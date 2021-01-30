@@ -271,7 +271,7 @@
             <div class="experience-icon mt-2" style="background-image: url('./images/VCL-logo.png');"></div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Software Developer - VCL</h7>
-            <h3 type="button" data-toggle="modal" data-target="#VCLModal" class="modal-button">LEARN MORE</h3>
+            <h3 type="button" data-toggle="modal" data-target="#VCLModal" class="modal-button hoverable">LEARN MORE</h3>
           </div>
         </div>
 
@@ -361,7 +361,7 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3" style="text-align: center;">Overlap Technical Lead</h7>
-            <h7 type="button" data-toggle="modal" data-target="#overlapModal" class="modal-button" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#overlapModal" class="modal-button hoverable" style="top: 30%;">
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
@@ -370,7 +370,7 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Bulletine</h7>
-            <h7 type="button" data-toggle="modal" data-target="#bulletineModal" class="modal-button" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#bulletineModal" class="modal-button hoverable" style="top: 30%;">
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
@@ -378,7 +378,7 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Shopple</h7>
-            <h7 type="button" data-toggle="modal" data-target="#shoppleModal" class="modal-button" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#shoppleModal" class="modal-button hoverable" style="top: 30%;">
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
@@ -387,7 +387,7 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Health Tracker</h7>
-            <h7 type="button" data-toggle="modal" data-target="#healthTrackerModal" class="modal-button"
+            <h7 type="button" data-toggle="modal" data-target="#healthTrackerModal" class="modal-button hoverable"
               style="top: 30%;">
               LEARN MORE</h7>
           </div>
@@ -396,7 +396,7 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Personal Portfolio</h7>
-            <h7 type="button" data-toggle="modal" data-target="#portfolioModal" class="modal-button" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#portfolioModal" class="modal-button hoverable" style="top: 30%;">
               LEARN MORE</h7>
           </div>
         </div>
@@ -636,10 +636,15 @@
       </div>
     </section>
 
-    <div id="top-button" data-toggle="tooltip" data-placement="top" title="Go To Top"><i class="fas fa-chevron-up"
-        id="up-arrow"></i></div>
-
+    <div id="top-button" data-toggle="tooltip" data-placement="top" title="Go To Top" class="hoverable"><i class="fas fa-chevron-up"
+        id="up-arrow"></i>
+    </div>
   </div>
+
+  <svg height="100" width="100" id="cursor-circle">
+    <circle cx="50" cy="50" r="20" stroke="#767a94" stroke-width="1" fill="none" />
+  </svg>
+  
   <!------------------------------- END Main Area ---------------------------->
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

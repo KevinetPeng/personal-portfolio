@@ -529,3 +529,13 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+
+/* Cursor */
+
+#cursor-circle {
+  position: fixed;
+  left: 150px;
+  top: 150px;
+  z-index: 999;
+  pointer-events: none;
+}
