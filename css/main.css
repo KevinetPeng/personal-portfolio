@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: .1s ease;
+  transition: 0.1s ease;
 }
 
 .logo-icon:hover {
@@ -174,6 +174,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--neutral-color-2);
   animation: show-element 0.5s ease 1.5s 1;
   animation-fill-mode: backwards;
+  display: inline;
 }
 
 .title-name {
@@ -188,6 +189,13 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
   color: var(--neutral-color-2);
   animation: show-element 0.5s ease 2s 1;
+  animation-fill-mode: backwards;
+}
+
+.sub-title-add {
+  font-weight: 300;
+  color: var(--neutral-color-2);
+  animation: show-element 0.5s ease 2.3s 1;
   animation-fill-mode: backwards;
 }
 
@@ -236,7 +244,6 @@ body::-webkit-scrollbar-thumb {
 
 .learn-more-flex {
   justify-content: center;
-
 }
 
 @media (min-width: 576px) {
@@ -289,6 +296,29 @@ body::-webkit-scrollbar-thumb {
   animation: rotation 2s 1 ease;
   animation-delay: 1s;
   animation-fill-mode: backwards;
+}
+
+.wave-emoji {
+  animation: show-wave 1s ease 3.2s 1;
+  animation-fill-mode: backwards;
+  display: inline-block;
+}
+
+@keyframes show-wave {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes rotation {
@@ -354,19 +384,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .skill-card {
-  width: 128px; 
-  padding-bottom: 12px; 
+  width: 128px;
+  padding-bottom: 12px;
   padding-top: 12px;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 24px;
   background-color: var(--neutral-color-1);
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .skill-card:hover {
   box-shadow: var(--shadow-primary);
-  background-color:  var(--neutral-color-3);
+  background-color: var(--neutral-color-3);
 }
 
 .skill-icon {
@@ -383,13 +413,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .primary-label {
-  color: var(--primary-color-6)
+  color: var(--primary-color-6);
 }
 
 .skill-hr {
   height: 1px;
-  clear:both;
-  display:block;
+  clear: both;
+  display: block;
   width: 100%;
   margin-top: 12px;
   margin-bottom: 8px;
@@ -416,12 +446,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .experience-card {
-  width: 280px; 
+  width: 280px;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 24px;
   background-color: var(--neutral-color-1);
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 .experience-card:hover .experience-icon {
@@ -438,7 +468,7 @@ body::-webkit-scrollbar-thumb {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 .modal-button {
@@ -447,9 +477,9 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid var(--primary-color-5);
   color: #333d44;
   opacity: 0;
-  transition: .4s ease;
+  transition: 0.4s ease;
   border-radius: 2px;
-  padding: 8px 12px ;
+  padding: 8px 12px;
 }
 
 .modal-button:hover {
@@ -466,7 +496,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-control-next-icon {
-	background-image: url(../svgs/next.svg);
+  background-image: url(../svgs/next.svg);
 }
 
 .carousel-indicators li {
