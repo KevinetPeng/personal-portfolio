@@ -360,8 +360,9 @@
             <div class="experience-icon project-icon mt-2" style="background-image: url('./images/overlap-logo.jpg');">
             </div>
             <hr class="skill-hr">
-            <h7 class="grey-label mb-3" style="text-align: center;">Overlap Technical Lead</h7>
-            <h7 type="button" data-toggle="modal" data-target="#overlapModal" class="modal-button hoverable" style="top: 30%;">
+            <h7 class="grey-label mb-3" style="text-align: center;">Overlap Tech Lead</h7>
+            <h7 type="button" data-toggle="modal" data-target="#overlapModal" class="modal-button hoverable"
+              style="top: 30%;">
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
@@ -370,7 +371,8 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Bulletine</h7>
-            <h7 type="button" data-toggle="modal" data-target="#bulletineModal" class="modal-button hoverable" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#bulletineModal" class="modal-button hoverable"
+              style="top: 30%;">
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
@@ -378,7 +380,8 @@
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Shopple</h7>
-            <h7 type="button" data-toggle="modal" data-target="#shoppleModal" class="modal-button hoverable" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#shoppleModal" class="modal-button hoverable"
+              style="top: 30%;">
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
@@ -392,11 +395,22 @@
               LEARN MORE</h7>
           </div>
           <div class="card d-flex flex-column align-items-center experience-card project-card">
+            <div class="experience-icon project-icon mt-2"
+              style="background-image: url('./images/line-following-robot.png');">
+            </div>
+            <hr class="skill-hr">
+            <h7 class="grey-label mb-3" style="text-align: center;">Line Following Robot</h7>
+            <h7 type="button" data-toggle="modal" data-target="#lineFollowingModal" class="modal-button hoverable"
+              style="top: 30%;">
+              LEARN MORE</h7>
+          </div>
+          <div class="card d-flex flex-column align-items-center experience-card project-card">
             <div class="experience-icon project-icon mt-2" style="background-image: url('./images/logo.png');">
             </div>
             <hr class="skill-hr">
             <h7 class="grey-label mb-3">Personal Portfolio</h7>
-            <h7 type="button" data-toggle="modal" data-target="#portfolioModal" class="modal-button hoverable" style="top: 30%;">
+            <h7 type="button" data-toggle="modal" data-target="#portfolioModal" class="modal-button hoverable"
+              style="top: 30%;">
               LEARN MORE</h7>
           </div>
         </div>
@@ -580,6 +594,39 @@
           </div>
         </div>
 
+        <!-- Line Following Robot modal -->
+        <div class="modal fade" id="lineFollowingModal" tabindex="-1" role="dialog"
+          aria-labelledby="lineFollowingModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="lineFollowingModalLabel">Arduino C Project - Line Following Robot</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <!-- Video -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dxEDvqiwW5U" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <!-- Details -->
+                <ul class="mt-2">
+                  <li class="detail-list-item">
+                    Automatic line following robot built with Arduino.
+                  </li class="detail-list-item">
+                  <li class="detail-list-item">
+                    Line following algorithm designed as a finite state machine written in C.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Portfolio modal -->
         <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel"
           aria-hidden="true">
@@ -636,15 +683,15 @@
       </div>
     </section>
 
-    <div id="top-button" data-toggle="tooltip" data-placement="top" title="Go To Top" class="hoverable"><i class="fas fa-chevron-up"
-        id="up-arrow"></i>
+    <div id="top-button" data-toggle="tooltip" data-placement="top" title="Go To Top" class="hoverable"><i
+        class="fas fa-chevron-up" id="up-arrow"></i>
     </div>
   </div>
 
   <svg height="100" width="100" id="cursor-circle">
     <circle cx="50" cy="50" r="20" stroke="#767a94" stroke-width="1" fill="none" />
   </svg>
-  
+
   <!------------------------------- END Main Area ---------------------------->
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
