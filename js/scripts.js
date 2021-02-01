@@ -104,7 +104,7 @@ document.getElementById("contact-button").addEventListener("click", () => {
 
 //top button scrolling handling
 document.getElementById("top-button").addEventListener("click", () => {
-  console.log("click");
+  //console.log("click");
   anime({
     targets: [document.documentElement, document.body],
     scrollTop: 0,
