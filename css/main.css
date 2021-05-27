@@ -30,24 +30,24 @@ html {
   position: fixed;
   bottom: -200px;
   right: 32px;
-  border-radius: 5px;
-  border: 2px solid var(--primary-color-5);
-  color: var(--primary-color-5);
-  box-shadow: var(--shadow-heavy);
-  background-color: var(--neutral-color-1);
+  border-radius: 50%;
+  color: whitesmoke;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.58);
+  background-color: var(--primary-color-6);
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #up-arrow {
-  width: 100%;
+  width: 60%;
   height: 100%;
 }
 
 #top-button:hover {
   box-shadow: var(--shadow-primary);
-  border: 2px solid var(--primary-color-main);
-  color: var(--primary-color-main);
-  background-color: var(--neutral-color-3);
+  background-color: var(--primary-color-5);
   cursor: pointer;
 }
 
@@ -159,6 +159,7 @@ body::-webkit-scrollbar-thumb {
 
 .logo-icon:hover {
   filter: brightness(130%);
+  cursor: pointer;
 }
 
 /* End Navbar */

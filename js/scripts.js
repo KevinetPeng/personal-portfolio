@@ -25,7 +25,7 @@ document
       targets: "#learn-more-arrow",
       rotate: "90deg",
     });
-  });
+  }, {passive: true});
 
 document
   .getElementById("learn-more-button")
@@ -34,7 +34,7 @@ document
       targets: "#learn-more-arrow",
       rotate: "0deg",
     });
-  });
+  }, {passive: true});
 
 document.getElementById("learn-more-button").addEventListener("click", () => {
   let offset =
@@ -46,7 +46,7 @@ document.getElementById("learn-more-button").addEventListener("click", () => {
     duration: 600,
     easing: "easeInOutQuad",
   });
-});
+}, {passive: true});
 
 //skills and projects buttons scrolling handling
 
@@ -62,7 +62,7 @@ document.getElementById("skills-button").addEventListener("click", () => {
     duration: 800,
     easing: "easeInOutQuad",
   });
-});
+}, {passive: true});
 
 document.getElementById("experience-button").addEventListener("click", () => {
   let offset =
@@ -76,7 +76,7 @@ document.getElementById("experience-button").addEventListener("click", () => {
     duration: 800,
     easing: "easeInOutQuad",
   });
-});
+}, {passive: true});
 
 document.getElementById("projects-button").addEventListener("click", () => {
   let offset =
@@ -90,7 +90,7 @@ document.getElementById("projects-button").addEventListener("click", () => {
     duration: 800,
     easing: "easeInOutQuad",
   });
-});
+}, {passive: true});
 
 //contact me button scrolling handling
 document.getElementById("contact-button").addEventListener("click", () => {
@@ -100,7 +100,7 @@ document.getElementById("contact-button").addEventListener("click", () => {
     duration: 800,
     easing: "easeInOutQuad",
   });
-});
+}, {passive: true});
 
 //top button scrolling handling
 document.getElementById("top-button").addEventListener("click", () => {
@@ -111,7 +111,18 @@ document.getElementById("top-button").addEventListener("click", () => {
     duration: 800,
     easing: "easeInOutQuad",
   });
-});
+}, {passive: true});
+
+//logo button scrolling handling
+document.getElementById("logo-button").addEventListener("click", () => {
+  //console.log("click");
+  anime({
+    targets: [document.documentElement, document.body],
+    scrollTop: 0,
+    duration: 800,
+    easing: "easeInOutQuad",
+  });
+}, {passive: true});
 
 //initialized previous state object
 let PrevState = {
@@ -271,7 +282,7 @@ window.addEventListener("scroll", () => {
   PrevState.moreSkillsImg = imgStateMoreSkills;
   PrevState.experienceImg = imgStateExperience;
   PrevState.projectsImg = imgStateProjects;
-});
+}, {passive: true});
 
 window.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
@@ -302,7 +313,7 @@ window.addEventListener("mousemove", (e) => {
     duration: 50,
     easing: "easeOutQuad",
   });
-});
+}, {passive: true});
 
 document.querySelectorAll("a, button, .hoverable").forEach((element) => {
   element.addEventListener("mouseover", () => {
@@ -320,7 +331,7 @@ document.querySelectorAll("a, button, .hoverable").forEach((element) => {
       duration: 800,
     });
   });
-});
+}, {passive: true});
 
 //enable bootstrap tooltips
 $(function () {
