@@ -32,7 +32,7 @@ html {
   right: 32px;
   border-radius: 50%;
   color: whitesmoke;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.58);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.58);
   background-color: var(--primary-color-6);
   z-index: 2;
   display: flex;
@@ -407,6 +407,7 @@ body::-webkit-scrollbar-thumb {
 
 .grey-label {
   color: #333d44;
+  text-align: center;
 }
 
 .grey-label-dark {
