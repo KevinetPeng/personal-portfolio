@@ -456,10 +456,6 @@ body::-webkit-scrollbar-thumb {
   transition: 0.4s ease;
 }
 
-.experience-card:hover .experience-icon {
-  opacity: 0.05;
-}
-
 .experience-card:hover .modal-button {
   opacity: 1;
 }
