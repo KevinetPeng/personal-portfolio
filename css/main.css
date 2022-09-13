@@ -154,6 +154,11 @@ body::-webkit-scrollbar-thumb {
   margin-left: 12px;
   margin-right: 48px;
   margin-bottom: 0px;
+  text-decoration: none;
+}
+
+.logo-name:hover {
+  text-decoration: none;
 }
 
 /* End Navbar */
@@ -166,7 +171,7 @@ body::-webkit-scrollbar-thumb {
   border-left: 24px solid var(--dark-color-2);
   color: white;
   background-color: var(--dark-color-1);
-  padding: 36px 36px 42px
+  padding: 36px 36px 42px;
 }
 
 .main-title {
@@ -192,13 +197,10 @@ body::-webkit-scrollbar-thumb {
   margin-left: 28px;
 }
 
-
-
 .outline-btn {
   border-color: var(--primary-color-main);
   border-width: 1px;
 }
-
 
 #learn-more-button {
   animation: show-element 0.75s ease-out 1s 1;
@@ -212,7 +214,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -516,33 +519,33 @@ body::-webkit-scrollbar-thumb {
 
 /* Custom skill card hover effects */
 .yellow-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c1c40e;;
+  box-shadow: 0px 0px 25px 0px #c1c40e;
 }
 
 .orange-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c4840e;;
+  box-shadow: 0px 0px 25px 0px #c4840e;
 }
 
 .blue-hover:hover {
-  box-shadow: 0px 0px 25px 0px #0e38c4;;
+  box-shadow: 0px 0px 25px 0px #0e38c4;
 }
 
 .silver-hover:hover {
-  box-shadow: 0px 0px 25px 0px rgb(177, 177, 177);;
+  box-shadow: 0px 0px 25px 0px rgb(177, 177, 177);
 }
 
 .green-hover:hover {
-  box-shadow: 0px 0px 25px 0px #1dc40e;;
+  box-shadow: 0px 0px 25px 0px #1dc40e;
 }
 
 .light-blue-hover:hover {
-  box-shadow: 0px 0px 25px 0px #0e81c4;;
+  box-shadow: 0px 0px 25px 0px #0e81c4;
 }
 
 .red-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c4290e;;
+  box-shadow: 0px 0px 25px 0px #c4290e;
 }
 
 .pink-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c94788;;
+  box-shadow: 0px 0px 25px 0px #c94788;
 }
