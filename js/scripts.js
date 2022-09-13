@@ -17,49 +17,7 @@ $(function () {
   $('[data-toggle="popover"]').popover();
 });
 
-//Learn more button
-document.getElementById('learn-more-button').addEventListener(
-  'mouseover',
-  () => {
-    anime({
-      targets: '#learn-more-arrow',
-      rotate: '90deg',
-    });
-  },
-  { passive: true }
-);
-
-document.getElementById('learn-more-button').addEventListener(
-  'mouseleave',
-  () => {
-    anime({
-      targets: '#learn-more-arrow',
-      rotate: '0deg',
-    });
-  },
-  { passive: true }
-);
-
-document.getElementById('learn-more-button').addEventListener(
-  'click',
-  () => {
-    let offset =
-      document.documentElement.scrollTop +
-      skills_section.getBoundingClientRect().top -
-      100;
-
-    anime({
-      targets: [document.documentElement, document.body],
-      scrollTop: offset,
-      duration: 600,
-      easing: 'easeInOutQuad',
-    });
-  },
-  { passive: true }
-);
-
 //skills and projects buttons scrolling handling
-
 document.getElementById('skills-button').addEventListener(
   'click',
   () => {
@@ -79,6 +37,24 @@ document.getElementById('skills-button').addEventListener(
 );
 
 document.getElementById('experience-button').addEventListener(
+  'click',
+  () => {
+    let offset =
+      document.documentElement.scrollTop +
+      experience_section.getBoundingClientRect().top -
+      100;
+
+    anime({
+      targets: [document.documentElement, document.body],
+      scrollTop: offset,
+      duration: 800,
+      easing: 'easeInOutQuad',
+    });
+  },
+  { passive: true }
+);
+
+document.getElementById('learn-more-button').addEventListener(
   'click',
   () => {
     let offset =
@@ -121,36 +97,6 @@ document.getElementById('contact-button').addEventListener(
     anime({
       targets: [document.documentElement, document.body],
       scrollTop: document.body.scrollHeight,
-      duration: 800,
-      easing: 'easeInOutQuad',
-    });
-  },
-  { passive: true }
-);
-
-//top button scrolling handling
-document.getElementById('top-button').addEventListener(
-  'click',
-  () => {
-    //console.log("click");
-    anime({
-      targets: [document.documentElement, document.body],
-      scrollTop: 0,
-      duration: 800,
-      easing: 'easeInOutQuad',
-    });
-  },
-  { passive: true }
-);
-
-//logo button scrolling handling
-document.getElementById('logo-button').addEventListener(
-  'click',
-  () => {
-    //console.log("click");
-    anime({
-      targets: [document.documentElement, document.body],
-      scrollTop: 0,
       duration: 800,
       easing: 'easeInOutQuad',
     });
@@ -205,39 +151,27 @@ window.addEventListener(
     //card ending pattern animations
     let imgStateSkills;
     let imgStateExperience;
-    let imgStateMoreSkills;
     let imgStateProjects;
 
     // if the bottom of the skills section is higher than the lowest point of the window, imgStateSkills is true
     if (projects_section.getBoundingClientRect().bottom < window.innerHeight) {
       imgStateSkills = true;
-      imgStateMoreSkills = true;
       imgStateExperience = true;
       imgStateProjects = true;
     } else if (
       experience_section.getBoundingClientRect().bottom < window.innerHeight
     ) {
       imgStateSkills = true;
-      imgStateMoreSkills = true;
       imgStateExperience = true;
-      imgStateProjects = false;
-    } else if (
-      more_skills_section.getBoundingClientRect().bottom < window.innerHeight
-    ) {
-      imgStateSkills = true;
-      imgStateMoreSkills = true;
-      imgStateExperience = false;
       imgStateProjects = false;
     } else if (
       skills_section.getBoundingClientRect().bottom < window.innerHeight
     ) {
       imgStateSkills = true;
-      imgStateMoreSkills = false;
       imgStateExperience = false;
       imgStateProjects = false;
     } else {
       imgStateSkills = false;
-      imgStateMoreSkills = false;
       imgStateExperience = false;
       imgStateProjects = false;
     }
@@ -255,24 +189,6 @@ window.addEventListener(
     else if (imgStateSkills == false && PrevState.skillsImg == true) {
       anime({
         targets: '.img1',
-        backgroundPosition: '50% 150%',
-        duration: 1,
-      });
-    }
-
-    //if the skills more skills state goes from false -> true, show image animation
-    if (imgStateMoreSkills == true && PrevState.moreSkillsImg == false) {
-      anime({
-        targets: '.img2',
-        backgroundPosition: '50% 100%',
-        easing: 'easeOutQuad',
-        duration: 600,
-      });
-    }
-    //if the skills more skills state goes from true -> false, hide image animation
-    else if (imgStateMoreSkills == false && PrevState.moreSkillsImg == true) {
-      anime({
-        targets: '.img2',
         backgroundPosition: '50% 150%',
         duration: 1,
       });
@@ -315,7 +231,6 @@ window.addEventListener(
     }
 
     PrevState.skillsImg = imgStateSkills;
-    PrevState.moreSkillsImg = imgStateMoreSkills;
     PrevState.experienceImg = imgStateExperience;
     PrevState.projectsImg = imgStateProjects;
   },
@@ -373,6 +288,21 @@ document.querySelectorAll('a, button, .hoverable').forEach(
         scale: 1,
         duration: 800,
       });
+    });
+  },
+  { passive: true }
+);
+
+//top button scrolling handling
+document.getElementById('top-button').addEventListener(
+  'click',
+  () => {
+    //console.log("click");
+    anime({
+      targets: [document.documentElement, document.body],
+      scrollTop: 0,
+      duration: 800,
+      easing: 'easeInOutQuad',
     });
   },
   { passive: true }

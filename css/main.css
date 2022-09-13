@@ -148,129 +148,76 @@ body::-webkit-scrollbar-thumb {
   border-color: var(--primary-color-3);
 }
 
-.logo-icon {
-  height: 40px;
-  width: 40px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: 0.1s ease;
-}
-
-.logo-icon:hover {
-  filter: brightness(130%);
-  cursor: pointer;
+.logo-name {
+  color: white !important;
+  text-transform: uppercase;
+  margin-left: 12px;
+  margin-right: 48px;
+  margin-bottom: 0px;
 }
 
 /* End Navbar */
 
 /* Banner */
 
-.title {
+.title-box {
   z-index: 1;
+  margin-top: 140px;
+  border-left: 24px solid var(--dark-color-2);
+  color: white;
+  background-color: var(--dark-color-1);
+  padding: 36px 36px 42px
 }
 
 .main-title {
-  font-weight: 300;
-  color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 1.5s 1;
-  animation-fill-mode: backwards;
+  font-weight: 400;
   display: inline;
-}
-
-.title-name {
-  font-weight: 600;
-  color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 1.7s 1;
-  animation-fill-mode: backwards;
-  text-shadow: 2px 2px 0px rgba(155, 155, 155, 0.3);
 }
 
 .sub-title {
   font-weight: 300;
-  color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 2s 1;
+  margin-top: 8px;
+  animation: show-element 0.5s ease 0.1s 1;
   animation-fill-mode: backwards;
 }
 
 .sub-title-add {
   font-weight: 300;
+  animation: show-element 0.5s ease 0.5s 1;
+  animation-fill-mode: backwards;
+}
+
+.section-sub-title {
   color: var(--neutral-color-2);
-  animation: show-element 0.5s ease 2.3s 1;
-  animation-fill-mode: backwards;
+  margin-left: 28px;
 }
 
-.banner-wrapper {
-  height: var(--banner-height);
-}
 
-.banner {
-  background-image: url(../images/Subtle-Prism.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 100px;
-  animation: slide-down 1.5s ease 0.3s 1;
-  animation-fill-mode: backwards;
-}
-
-.fill-banner {
-  height: var(--banner-height);
-}
-
-.content-banner {
-  height: calc(100vh - 54px);
-}
 
 .outline-btn {
   border-color: var(--primary-color-main);
   border-width: 1px;
 }
 
-.profile-pic {
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 200px;
-  margin-right: 32px;
-  border-color: var(--primary-color-6);
-  border-width: 4px;
-  border-style: solid;
-  box-shadow: var(--shadow-color);
-  animation: show-element 0.5s ease 0.7s 1;
-  animation-fill-mode: backwards;
-}
-
-.learn-more-flex {
-  justify-content: center;
-}
-
-@media (min-width: 576px) {
-  .learn-more-flex {
-    justify-content: start;
-  }
-}
 
 #learn-more-button {
-  box-shadow: var(--shadow-color);
-  border-color: var(--primary-color-5);
-  border-width: 1px;
-  background-color: var(--neutral-color-2);
-  box-shadow: 2px 2px 1px var(--neutral-color-7);
-  animation: flyInBottom 0.75s ease-out 2.3s 1;
+  animation: show-element 0.75s ease-out 1s 1;
   animation-fill-mode: backwards;
-}
-
-#learn-more-button:hover {
-  border-color: var(--neutral-color-3);
-  background-color: var(--neutral-color-3);
-  box-shadow: var(--shadow-heavy);
+  margin-top: 48px;
+  align-self: center;
 }
 
 #learn-more-arrow {
-  margin-left: 10px;
+  animation: MoveUpDown 1.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
 }
 
 .profile-pattern-flex {
@@ -300,7 +247,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wave-emoji {
-  animation: show-wave 1s ease 3.2s 1;
+  animation: show-wave 1s ease 1.6s 1;
   animation-fill-mode: backwards;
   display: inline-block;
 }
@@ -349,12 +296,11 @@ body::-webkit-scrollbar-thumb {
 
 .container-card {
   height: fit-content;
-  margin-top: 200px;
+  margin-top: 160px;
   background-color: var(--dark-color-1);
-  box-shadow: var(--shadow-heavy);
-  border-radius: 4px;
   z-index: 1;
   padding-bottom: 32px;
+  border-left: 24px solid var(--dark-color-2);
 }
 
 .card-ending {
@@ -448,7 +394,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .experience-card {
-  width: 280px;
+  width: 190px;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 24px;
@@ -461,8 +407,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .experience-icon {
-  width: 260px;
-  height: 260px;
+  width: 170px;
+  height: 170px;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
