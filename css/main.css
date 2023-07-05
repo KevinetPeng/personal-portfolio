@@ -192,6 +192,7 @@ body::-webkit-scrollbar-thumb {
 
 .section-sub-title {
   color: var(--neutral-color-2);
+  font-weight: 400;
 }
 
 .outline-btn {
@@ -247,9 +248,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wave-emoji {
-  animation: show-wave 0.7s ease 0.7s 1;
+  animation: show-wave 0.7s ease 1s 2;
   animation-fill-mode: backwards;
   display: inline-block;
+}
+
+.title-box-highlighter {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 35%, 
+    #4e4285 35%,
+    #4e4285 97%,
+    rgba(0, 0, 0, 0) 97%
+    );
 }
 
 @keyframes show-wave {
