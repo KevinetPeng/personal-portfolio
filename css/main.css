@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 
 .title-box {
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 40px;
   border-left: 24px solid var(--dark-color-2);
   color: white;
   background-color: var(--dark-color-1);
@@ -337,27 +337,6 @@ body::-webkit-scrollbar-thumb {
   background-position: 50% 150%;
 }
 
-.skill-card {
-  width: 128px;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: 24px;
-  background-color: var(--neutral-color-1);
-  transition: 0.2s ease;
-}
-
-.skill-card:hover {
-  box-shadow: var(--shadow-primary);
-  background-color: var(--neutral-color-3);
-}
-
-.skill-icon {
-  width: 100px;
-  height: 100px;
-}
-
 .grey-label {
   color: #333d44;
   text-align: center;
@@ -409,10 +388,6 @@ body::-webkit-scrollbar-thumb {
   transition: 0.4s ease;
 }
 
-.experience-card:hover .modal-button {
-  opacity: 1;
-}
-
 .experience-icon {
   width: 170px;
   height: 170px;
@@ -422,53 +397,6 @@ body::-webkit-scrollbar-thumb {
   transition: 0.4s ease;
 }
 
-.modal-button {
-  position: absolute;
-  top: 40%;
-  border: 2px solid var(--primary-color-5);
-  color: #333d44;
-  opacity: 0;
-  transition: 0.4s ease;
-  border-radius: 2px;
-  padding: 8px 12px;
-}
-
-.modal-button:hover {
-  background-color: var(--primary-color-5);
-  color: #ffffff;
-}
-
-.carousel-inner {
-  height: auto;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(../svgs/back.svg);
-}
-
-.carousel-control-next-icon {
-  background-image: url(../svgs/next.svg);
-}
-
-.carousel-indicators li {
-  background-color: var(--neutral-color-7);
-}
-
-/* Project Area */
-
-.project-card {
-  width: 160px;
-}
-
-.project-icon {
-  width: 150px;
-  height: 150px;
-}
-
-.self-link {
-  cursor: pointer;
-  width: auto;
-}
 
 /* Contact me area */
 .contact-section {
@@ -525,42 +453,15 @@ body::-webkit-scrollbar-thumb {
   pointer-events: none;
 }
 
-/* Custom skill card hover effects */
-.yellow-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c1c40e;
-}
-
-.orange-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c4840e;
-}
-
-.blue-hover:hover {
-  box-shadow: 0px 0px 25px 0px #0e38c4;
-}
-
-.silver-hover:hover {
-  box-shadow: 0px 0px 25px 0px rgb(177, 177, 177);
-}
-
-.green-hover:hover {
-  box-shadow: 0px 0px 25px 0px #1dc40e;
-}
-
-.light-blue-hover:hover {
-  box-shadow: 0px 0px 25px 0px #0e81c4;
-}
-
-.red-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c4290e;
-}
-
-.pink-hover:hover {
-  box-shadow: 0px 0px 25px 0px #c94788;
-}
-
 /* Override bootstrap container width */
 @media (min-width: 992px) {
-  .container{
+  .container {
       max-width: 880px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-box {
+    margin-top: 142px;
   }
 }
