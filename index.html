@@ -36,8 +36,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <!-- Google Open Sans font-->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome SVG Icons-->
   <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"
@@ -68,29 +70,13 @@
   <div class="main-area">
     <!-- Nav bar -->
     <div class="nav-menu" id="main-navbar">
-      <nav class="navbar navbar-expand-md navbar-light">
-        <a class="logo-name" data-toggle="tooltip" data-placement="bottom" title="Home" href="/">
+      <nav class="navbar navbar-expand navbar-light container">
+        <a class="logo-name" href="/">
           KEVIN PENG
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" id="experience-button">EXPERIENCE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="skills-button">SKILLS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="projects-button">PROJECTS</a>
-            </li>
-            <li class="nav-item  mr-auto">
-              <a class="nav-link" id="contact-button">CONTACT</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item ml-auto">
               <a class="nav-link" href="https://github.com/KevinetPeng" target="_blank" data-toggle="tooltip"
                 data-placement="bottom" title="GitHub"><i class="fab fa-github fa-lg nav-icon"></i></a>
             </li>
@@ -98,10 +84,10 @@
               <a class="nav-link" href="https://www.linkedin.com/in/-kevin-peng/" target="_blank" data-toggle="tooltip"
                 data-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin-in fa-lg nav-icon"></i></a>
             </li>
-            <li class="nav-item  mr-md-5 ml-md-2">
-              <a class="nav-link" id="dl-resume" data-toggle="tooltip" data-placement="bottom" title="Download Resume"
-                href="./files/Resume - Kevin Peng.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <li class="nav-item  ml-md-2">
+              <a class="nav-link" id="dl-resume" href="./files/Resume - Kevin Peng.pdf"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
+                  viewBox="0 0 16 16">
                   <path
                     d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
                   <path
@@ -113,31 +99,28 @@
         </div>
       </nav>
     </div>
-    <div class="container title-box">
+
+    <div class="container title-box" id="intro-title-box">
       <div class="d-flex flex-column justify-content-center align-items-start">
         <div class="mt-4 mt-sm-0">
           <h2 class="title-text mt-4 mt-sm-1 main-title">
-            Hello, I'm <span class="title-name">Kevin Peng </span>
+            Hi <span class="wave-emoji">👋</span> I'm Kevin! I'm a Software Engineer,
+            previously at SAP and FISPAN for fullstack software development. I studied at UBC with a degree in
+            Integrated Engineering.
           </h2>
-          <h2 class="wave-emoji">👋</h2>
         </div>
-        <h5 class="title-text sub-title">
-          📖 a software developer studying at The University of British Columbia,
-        </h5>
-        <h5 class="title-text sub-title-add">
-          👨‍💻 and this is my personal portfolio.
-        </h5>
         <a type="button" class="d-flex flex-column align-items-center" id="learn-more-button">
           LEARN MORE<i class="fas fa-chevron-down" id="learn-more-arrow"></i>
         </a>
       </div>
     </div>
+    <section class="container card-ending img4"></section>
 
     <!-- Experience -->
     <section id="experience">
       <div class="container container-card">
-        <div class="d-flex flex-row">
-          <h2 class="title-text section-sub-title mt-5">Work Experience</h2>
+        <div class="d-flex flex-row justify-content-center">
+          <h2 class="title-text section-sub-title mt-5">My Work</h2>
         </div>
 
         <div class="d-flex flex-row justify-content-center flex-wrap mt-4 mb-5">
@@ -315,332 +298,12 @@
     </section>
     <section class="container card-ending img3"></section>
 
-    <!-- Skills -->
-    <section id="skills">
-      <div class="container container-card">
-        <div class="d-flex flex-row">
-          <h2 class="title-text section-sub-title mt-5">Skills and Languages</h2>
-        </div>
-        <div class="d-flex flex-row justify-content-center flex-wrap mt-4 mb-5">
-          <div class="card d-flex flex-column align-items-center skill-card hoverable yellow-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/javascript.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">JavaScript</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable orange-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/kotlin.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">Kotlin</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable blue-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/python.svg');">
-            </div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">Python</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable silver-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/c.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">C</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable green-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/nodejs.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">Node.js</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable light-blue-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/react.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">React</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable green-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/mongodb.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">MongoDB</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable orange-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/mysql.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">MySQL</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable blue-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/ts.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">TypeScript</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable">
-            <div class="skill-icon" style="background-image: url('./svgs/redux-logo.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">Redux</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable light-blue-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/docker.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">Docker</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center skill-card hoverable red-hover">
-            <div class="skill-icon" style="background-image: url('./svgs/git.svg');"></div>
-            <hr class="skill-hr">
-            <h7 class="grey-label">Git</h7>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container card-ending img1"></section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container container-card">
-        <div class="d-flex flex-row">
-          <h2 class="title-text section-sub-title mt-5">Personal Projects</h2>
-        </div>
-        <div class="d-flex flex-row justify-content-center flex-wrap mt-4 mb-5">
-
-          <div class="card d-flex flex-column align-items-center experience-card project-card">
-            <div class="experience-icon project-icon mt-2" style="background-image: url('./images/overlap-logo.jpg');">
-            </div>
-            <hr class="skill-hr">
-            <h7 class="grey-label mb-3" style="text-align: center;">Overlap</h7>
-            <h7 type="button" data-toggle="modal" data-target="#overlapModal" class="modal-button hoverable"
-              style="top: 30%;">LEARN MORE</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center experience-card project-card">
-            <div class="experience-icon project-icon mt-2" style="background-image: url('./images/shopple-logo.png');">
-            </div>
-            <hr class="skill-hr">
-            <h7 class="grey-label mb-3">Shopple</h7>
-            <h7 type="button" data-toggle="modal" data-target="#shoppleModal" class="modal-button hoverable"
-              style="top: 30%;">
-              LEARN MORE</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center experience-card project-card">
-            <div class="experience-icon project-icon mt-2"
-              style="background-image: url('./images/bulletine-logo.png');">
-            </div>
-            <hr class="skill-hr">
-            <h7 class="grey-label mb-3">Bulletine</h7>
-            <h7 type="button" data-toggle="modal" data-target="#bulletineModal" class="modal-button hoverable"
-              style="top: 30%;">
-              LEARN MORE</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center experience-card project-card">
-            <div class="experience-icon project-icon mt-2"
-              style="background-image: url('./images/healthTracker1.png');">
-            </div>
-            <hr class="skill-hr">
-            <h7 class="grey-label mb-3">Health Tracker</h7>
-            <h7 type="button" data-toggle="modal" data-target="#healthTrackerModal" class="modal-button hoverable"
-              style="top: 30%;">
-              LEARN MORE</h7>
-          </div>
-          <div class="card d-flex flex-column align-items-center experience-card project-card">
-            <div class="experience-icon project-icon mt-2"
-              style="background-image: url('./images/line-following-robot.png');">
-            </div>
-            <hr class="skill-hr">
-            <h7 class="grey-label mb-3" style="text-align: center;">Line Following Robot</h7>
-            <h7 type="button" data-toggle="modal" data-target="#lineFollowingModal" class="modal-button hoverable"
-              style="top: 30%;">
-              LEARN MORE</h7>
-          </div>
-        </div>
-
-        <!-- Overlap Modal -->
-        <div class="modal fade" id="overlapModal" tabindex="-1" role="dialog" aria-labelledby="overlapModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="VCLModalLabel">Technical Lead - Overlap Project</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <!-- Carousel -->
-                <div id="carouselOverlap" class="carousel slide mt-2" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <!-- Video -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M7xzm9jY6b0"
-                        frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    </div>
-                  </div>
-                </div>
-                <!-- Details -->
-                <a href="https://project-overlap.herokuapp.com" target="_blank"
-                  class="mt-3 d-inline-block">https://project-overlap.herokuapp.com</a>
-                <ul class="mt-2">
-                  <li class="detail-list-item">
-                    Led a team of 6 in developing a MERN stack web-app for group music insights and playlist generation
-                    by integrating the Spotify API.
-                  </li>
-                  <li class="detail-list-item">
-                    Implemented high and low-level designs full-stack, including reusable UI components with React,
-                    bidirectional data models with MongoDB, and a RESTful API backend with NodeJS and ExpressJS.
-                  </li>
-                  <li class="detail-list-item">
-                    Led weekly sprint meetings, conducted code reviews, taught web architecture and fundamental design
-                    principles, and delegated tasks for the entire team.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bulletine modal -->
-        <div class="modal fade" id="bulletineModal" tabindex="-1" role="dialog" aria-labelledby="bulletineModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="bulletineModalLabel">Web Development - Bulletine Project</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <!-- Image -->
-                <img src="./images/bulletine1.jpg" class="img-fluid"></img>
-                <!-- Details -->
-                <a href="https://bulletinedigital.com/index.html" target="_blank"
-                  class="mt-3 d-inline-block">https://bulletinedigital.com/index.html</a>
-                <ul class="mt-2">
-                  <li class="detail-list-item">
-                    Developed project website with HTML/CSS/JavaScript in addition to SASS and jQuery while working with
-                    2 clients.
-                  </li>
-                  <li class="detail-list-item">
-                    Designed iteratively with frequent client feedback sessions with a focus on user-friendly navigation
-                    and website responsiveness.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Shopple modal -->
-        <div class="modal fade" id="shoppleModal" tabindex="-1" role="dialog" aria-labelledby="shoppleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="shoppleModalLabel">Web Development - Shopple Project</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <!-- Image -->
-                <img src="./images/shopple1.jpg" class="img-fluid"></img>
-                <!-- Details -->
-                <a href="https://shopple.herokuapp.com/" target="_blank"
-                  class="mt-3 d-inline-block">https://shopple.herokuapp.com/</a>
-                <ul class="mt-2">
-                  <li class="detail-list-item">
-                    Utilized MongoDB, Express.js, React, and Node.js in addition to the Gmail API to catalogue and sort
-                    sales from various brands.
-                  </li>
-                  <li class="detail-list-item">
-                    Implemented backend RESTful API routes and middleware using ExpressJS, and designed MongoDB data
-                    models with 1-to-many relationships to store sale and company data.
-                  </li>
-                  <li class="detail-list-item">
-                    Implemented a keyword searching algorithm, and sorting algorithms implemented using merge-sort.
-                  </li>
-                  <li class="detail-list-item">
-                    Designed modular, reusable UI components using Material UI, React, and CSS.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Health Tracker modal -->
-        <div class="modal fade" id="healthTrackerModal" tabindex="-1" role="dialog"
-          aria-labelledby="healthTrackerModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="healthTrackerModalLabel">Java Project - Health Tracker Project</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <!-- Image -->
-                <img src="./images/healthTracker1.png" class="img-fluid"></img>
-                <!-- Details -->
-                <a href="https://github.com/KevinetPeng/HealthTracker2.0" target="_blank"
-                  class="mt-3 d-inline-block">https://github.com/KevinetPeng/HealthTracker2.0</a>
-                <ul class="mt-2">
-                  <li class="detail-list-item">
-                    Utilized Java to develop a desktop app that aggregates user input for mental health, physical
-                    health, and overall happiness to track health over a long period of time.
-                  </li>
-                  <li class="detail-list-item">
-                    UI developed using MVC design principles with JavaFX along with CSS styling.
-                  </li>
-                  <li class="detail-list-item">
-                    Implemented create, read, update, and delete operations for persistent local data storage in the
-                    form of JSON objects.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Line Following Robot modal -->
-        <div class="modal fade" id="lineFollowingModal" tabindex="-1" role="dialog"
-          aria-labelledby="lineFollowingModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="lineFollowingModalLabel">Arduino C Project - Line Following Robot</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <!-- Video -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dxEDvqiwW5U" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <!-- Details -->
-                <ul class="mt-2">
-                  <li class="detail-list-item">
-                    Automatic line following robot built with Arduino.
-                  </li>
-                  <li class="detail-list-item">
-                    Line following algorithm designed as a finite state machine written in C.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="container card-ending img4"></section>
+   
 
     <!-- Contact Me -->
     <section class="contact-section d-flex flex-column justify-content-center align-items-center" id="contact">
       <div class="d-flex flex-row justify-content-center">
-        <h2 class="title-text section-sub-title bottom-border-white">CONTACT</h2>
+        <h2 class="title-text section-sub-title bottom-border-white contact-title">CONTACT</h2>
       </div>
       <div class="d-flex flex-row justify-content-center mt-1">
         <a href="mailto:kevinpkf@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Email"
@@ -649,19 +312,13 @@
           title="LinkedIn" class="ml-3 mr-3" target="_blank"><i class="bi bi-linkedin contact-icons"></i></a>
         <a href="https://github.com/KevinetPeng" data-toggle="tooltip" data-placement="bottom" title="GitHub"
           class="ml-3 mr-3" target="_blank"><i class="bi bi-github contact-icons"></i></a>
-        <a href="https://www.instagram.com/kevinpengaaa/" data-toggle="tooltip" data-placement="bottom"
-          title="Instagram" class="ml-3 mr-3" target="_blank"><i class="bi bi-instagram contact-icons"></i></a>
       </div>
     </section>
 
-    <div id="top-button" data-toggle="tooltip" data-placement="top" title="Go To Top" class="hoverable"><i
+    <div id="top-button" class="hoverable"><i
         class="fas fa-chevron-up" id="up-arrow"></i>
     </div>
   </div>
-
-  <svg height="100" width="100" id="cursor-circle">
-    <circle cx="50" cy="50" r="20" stroke="#767a94" stroke-width="1" fill="none" />
-  </svg>
 
   <!------------------------------- END Main Area ---------------------------->
   <!-- Scripts -->

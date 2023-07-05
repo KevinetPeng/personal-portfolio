@@ -3,7 +3,7 @@
 
 body,
 html {
-  font-family: var(--open-sans);
+  font-family: var(--roboto);
   box-sizing: border-box;
   margin: 0%;
   width: 100%;
@@ -90,8 +90,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Navbar */
 
-.navbar {
-  padding: 8px 16px 8px 24px;
+.nav-menu {
   background-color: var(--dark-color-2);
   border-bottom: 3px solid var(--primary-color-main);
 }
@@ -151,10 +150,9 @@ body::-webkit-scrollbar-thumb {
 .logo-name {
   color: white !important;
   text-transform: uppercase;
-  margin-left: 12px;
-  margin-right: 48px;
   margin-bottom: 0px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .logo-name:hover {
@@ -167,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 
 .title-box {
   z-index: 1;
-  margin-top: 140px;
+  margin-top: 100px;
   border-left: 24px solid var(--dark-color-2);
   color: white;
   background-color: var(--dark-color-1);
@@ -175,7 +173,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-title {
-  font-weight: 400;
+  font-weight: 300;
   display: inline;
 }
 
@@ -194,7 +192,6 @@ body::-webkit-scrollbar-thumb {
 
 .section-sub-title {
   color: var(--neutral-color-2);
-  margin-left: 28px;
 }
 
 .outline-btn {
@@ -203,7 +200,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #learn-more-button {
-  animation: show-element 0.75s ease-out 1s 1;
+  animation: show-element 0.75s ease-out 0s 1;
   animation-fill-mode: backwards;
   margin-top: 48px;
   align-self: center;
@@ -250,24 +247,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wave-emoji {
-  animation: show-wave 1s ease 1.6s 1;
+  animation: show-wave 0.7s ease 0.7s 1;
   animation-fill-mode: backwards;
   display: inline-block;
 }
 
 @keyframes show-wave {
   0% {
-    opacity: 0;
     transform: rotate(0deg);
   }
 
   50% {
-    opacity: 1;
     transform: rotate(30deg);
   }
 
   100% {
-    opacity: 1;
     transform: rotate(0deg);
   }
 }
@@ -507,6 +501,10 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.contact-title {
+  margin-left: 0;
+}
+
 /* Cursor */
 
 #cursor-circle {
@@ -548,4 +546,11 @@ body::-webkit-scrollbar-thumb {
 
 .pink-hover:hover {
   box-shadow: 0px 0px 25px 0px #c94788;
+}
+
+/* Override bootstrap container width */
+@media (min-width: 992px) {
+  .container{
+      max-width: 880px;
+  }
 }
