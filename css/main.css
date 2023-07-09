@@ -38,6 +38,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.1s;
 }
 
 #up-arrow {
@@ -46,8 +47,9 @@ html {
 }
 
 #top-button:hover {
-  box-shadow: var(--shadow-primary);
   background-color: var(--primary-color-5);
+  width: 52px;
+  height: 52px;
   cursor: pointer;
 }
 
@@ -108,6 +110,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 0.5rem;
   padding-bottom: 0.25rem;
   margin-bottom: 0.25rem;
+  transition: 0.2s;
 }
 
 .nav-menu .navbar .navbar-nav .nav-link:hover {
@@ -148,15 +151,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo-name {
-  color: white !important;
+  color: white;
   text-transform: uppercase;
   margin-bottom: 0px;
   text-decoration: none;
   font-size: 20px;
+  transition: 0.2s;
 }
 
 .logo-name:hover {
   text-decoration: none;
+  color: var(--primary-color-3);
+  cursor: pointer;
 }
 
 /* End Navbar */
@@ -205,6 +211,12 @@ body::-webkit-scrollbar-thumb {
   animation-fill-mode: backwards;
   margin-top: 48px;
   align-self: center;
+  transition: 0.3s;
+}
+
+#learn-more-button:hover {
+  font-size: 1.1rem;
+  color: var(--primary-color-3);
 }
 
 #learn-more-arrow {
