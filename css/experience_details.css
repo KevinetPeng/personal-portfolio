@@ -1,0 +1,20 @@
+/* Override bootstrap container width */
+@media (min-width: 768px) {
+  .experience-main-content {
+    max-width: 710px;
+  }
+}
+
+.main-image-outer {
+  height: 400px;
+  width: 100%;
+}
+
+.main-image-inner {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
