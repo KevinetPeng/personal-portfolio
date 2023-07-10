@@ -10,6 +10,10 @@ html {
   height: 100%;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* preload class to ensure that animations and transitions do not play before page is loaded */
 /* preload class is removed from body after page is loaded */
 .preload *,
@@ -48,8 +52,7 @@ html {
 
 #top-button:hover {
   background-color: var(--primary-color-5);
-  width: 52px;
-  height: 52px;
+  transform: scale(1.04);
   cursor: pointer;
 }
 
@@ -71,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 /* End Scrollbar */
 
 .main-area {
-  background-color: var(--neutral-color-2);
+  background-color: var(--neutral-color-1);
 }
 
 /* Text */
@@ -267,11 +270,11 @@ body::-webkit-scrollbar-thumb {
 
 .title-box-highlighter {
   background: linear-gradient(
-    rgba(0, 0, 0, 0) 35%, 
+    rgba(0, 0, 0, 0) 35%,
     #4e4285 35%,
     #4e4285 97%,
     rgba(0, 0, 0, 0) 97%
-    );
+  );
 }
 
 @keyframes show-wave {
@@ -393,8 +396,12 @@ body::-webkit-scrollbar-thumb {
   margin-right: 24px;
   margin-top: 36px;
   background-color: var(--neutral-color-1);
-  transition: 0.4s ease;
+  transition: 0.2s;
   font-size: 18px;
+}
+
+.experience-card:hover {
+  transform: scale(1.03);
 }
 
 .experience-icon {
@@ -405,7 +412,6 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   transition: 0.4s ease;
 }
-
 
 /* Contact me area */
 .contact-section {
@@ -465,7 +471,7 @@ body::-webkit-scrollbar-thumb {
 /* Override bootstrap container width */
 @media (min-width: 992px) {
   .container {
-      max-width: 880px;
+    max-width: 880px;
   }
 }
 
@@ -474,10 +480,3 @@ body::-webkit-scrollbar-thumb {
     margin-top: 142px;
   }
 }
-
-/*
-.hoverable:hover {
-  cursor: pointer;
-}
-*/
-

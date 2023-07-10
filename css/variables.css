@@ -30,7 +30,7 @@
   --shadow-heavy: 1px 4px 15px 1px rgba(0, 0, 0, 0.35);
   --shadow-primary: 0px 0px 25px 0px #8352df;
 
-  --roboto: 'Roboto', sans-serif;
+  --roboto: "Roboto", sans-serif;
 
   --banner-height: calc(100vh + 34px);
 }
