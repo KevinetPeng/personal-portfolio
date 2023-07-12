@@ -271,7 +271,7 @@ body::-webkit-scrollbar-thumb {
 .title-box-highlighter {
   background: linear-gradient(
     rgba(0, 0, 0, 0) 35%,
-    #4e4285 35%,
+    #5d4e9d 35%,
     #4e4285 97%,
     rgba(0, 0, 0, 0) 97%
   );
