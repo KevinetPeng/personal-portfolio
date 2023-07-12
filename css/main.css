@@ -421,6 +421,7 @@ body::-webkit-scrollbar-thumb {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .contact-icons {
@@ -430,6 +431,12 @@ body::-webkit-scrollbar-thumb {
 
 .contact-icons:hover {
   color: var(--primary-color-2);
+}
+
+.built-by-me {
+  color: var(--primary-color-1);
+  position: absolute;
+  bottom: 18px;
 }
 
 /* Animations */

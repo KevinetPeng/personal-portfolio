@@ -6,8 +6,8 @@
 }
 
 .main-image-outer {
-  height: 400px;
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .main-image-inner {
@@ -17,4 +17,34 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-origin: content-box;
+}
+
+.experience-main-title {
+  font-weight: 700;
+  margin-top: 62px;
+}
+
+.experience-sub-title {
+  color: #7f7d85;
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+.experience-sub-heading {
+  font-weight: bold;
+  margin-top: 12px;
+}
+.experience-paragraph {
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+br {
+  margin-top: 12px;
+  display: block;
+  content: " ";
+}
+
+.contact-section {
+  margin-top: 60px;
 }
