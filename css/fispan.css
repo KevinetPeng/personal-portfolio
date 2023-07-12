@@ -1,0 +1,7 @@
+.main-image-outer-fispan {
+  background-color: var(--accent-color-1);
+}
+
+.main-image-inner {
+  padding: 120px 32px;
+}
