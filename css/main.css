@@ -400,7 +400,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
 }
 
-.experience-card:hover {
+a.experience-card:hover {
   transform: scale(1.03);
 }
 
