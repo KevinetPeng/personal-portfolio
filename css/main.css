@@ -434,7 +434,7 @@ a.experience-card:hover {
 }
 
 .built-by-me {
-  color: var(--primary-color-1);
+  color: var(--primary-color-6);
   position: absolute;
   bottom: 18px;
 }
