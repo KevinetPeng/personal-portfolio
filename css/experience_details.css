@@ -7,7 +7,7 @@
 
 .main-image-outer {
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 .main-image-inner {
@@ -21,13 +21,13 @@
 
 .experience-main-title {
   font-weight: 700;
-  margin-top: 62px;
+  margin-top: 68px;
 }
 
 .experience-sub-title {
   color: #7f7d85;
-  margin-top: 2px;
-  margin-bottom: 32px;
+  margin-top: 4px;
+  margin-bottom: 40px;
 }
 .experience-sub-heading {
   font-weight: bold;

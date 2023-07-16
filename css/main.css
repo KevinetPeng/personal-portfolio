@@ -402,6 +402,7 @@ body::-webkit-scrollbar-thumb {
 
 a.experience-card:hover {
   transform: scale(1.03);
+  box-shadow: 1px 4px 8px 4px rgba(0, 0, 0, 0.48);
 }
 
 .experience-icon {
